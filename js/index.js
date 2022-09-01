@@ -13,22 +13,16 @@ function loadEmail() {
 function displayUsers(users, uemail){
     const ol = document.getElementById('users-names');
     if(uemail === undefined){
-
     const newh2 = document.createElement('h2');
     newh2.innerHTML =  `
     <h2>Lists of User Names</h2>
     `
     ol.appendChild(newh2);
-
-
     for(const user of users){
     //    console.log(user.username);
        const li = document.createElement('li');
-
        li.innerText = user.username;
-       
        ol.appendChild(li);
-
     }
 
     }
